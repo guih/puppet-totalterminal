@@ -3,9 +3,9 @@
 # Examples
 #
 #   include totalterminal
-class totalterminal {
-  package { 'TotalTerminal 1.5.3':
+class totalterminal($version='1.5.3') {
+  package { 'TotalTerminal ${version}':
     provider => 'pkgdmg',
-    source   => 'http://downloads.binaryage.com/TotalTerminal-1.5.3.dmg'
+    source   => 'http://downloads.binaryage.com/TotalTerminal-${version}.dmg'
   }
 }
